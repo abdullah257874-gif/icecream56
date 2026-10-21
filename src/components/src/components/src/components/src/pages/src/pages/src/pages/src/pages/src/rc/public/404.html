@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      const pathSegmentsToKeep = 1;
+
+      let l = window.location;
+      let pathname = l.pathname.substr(1);
+      let segments = pathname.split("/");
+      if (segments.length > pathSegmentsToKeep) {
+        let redirectPath = "/" + segments.slice(pathSegmentsToKeep).join("/");
+        l.replace(
+          "https://" + l.hostname + "/frosty-dreams/" + "#/" + redirectPath
+        );
+      } else {
+        l.replace("https://" + l.hostname + "/frosty-dreams/");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

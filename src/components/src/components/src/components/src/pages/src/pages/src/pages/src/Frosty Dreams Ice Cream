@@ -1,0 +1,42 @@
+Frosty Dreams Ice Cream
+A premium, colorful, and responsive ice cream shop website built with React, Vite, Tailwind CSS, and React Router.
+
+Live Demo
+https://.github.io/frosty-dreams/
+
+Project Overview
+Frosty Dreams Ice Cream is a modern e-commerce-style storefront for an ice cream brand. It includes:
+
+Premium hero section
+Responsive navigation
+Product catalog and category filters
+Product detail page
+Build-your-own custom box experience
+Shopping cart with persistent localStorage
+Demo checkout flow
+Order confirmation page
+Contact and newsletter sections
+Mobile-friendly responsive design
+Tech Stack
+React
+Vite
+Tailwind CSS
+React Router
+Lucide React
+Local Storage
+Features
+Modern premium design with pastel colors and dessert-inspired UI
+Product cards with pricing, labels, and ratings
+Build-your-own box customization
+Demo checkout system with validation
+Persistent cart using browser localStorage
+Responsive layouts for desktop, tablet, and mobile
+GitHub Pages deployment ready
+Getting Started
+Prerequisites
+Make sure you have:
+
+Node.js 18+
+npm or yarn
+Install dependencies
+npm install

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #59352a;
+  background: #fff7e8;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 107, 157, 0.12), transparent 22%),
+    radial-gradient(circle at top right, rgba(184, 230, 208, 0.18), transparent 20%),
+    #fff7e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply rounded-full bg-[#FF6B9D] px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:scale-[1.02] hover:bg-[#f75d97];
+  }
+
+  .btn-secondary {
+    @apply rounded-full border border-[#59352A]/20 bg-white px-6 py-3 text-sm font-semibold text-[#59352A] transition hover:bg-[#FFF7E8];
+  }
+
+  .soft-card {
+    @apply rounded-[28px] border border-white/60 bg-white/75 shadow-soft backdrop-blur-sm;
+  }
+
+  .label-pill {
+    @apply inline-flex items-center rounded-full border border-[#59352A]/10 bg-[#FFF7E8] px-3 py-1 text-xs font-semibold uppercase tracking-[0.08em] text-[#59352A]/75;
+  }
+}
